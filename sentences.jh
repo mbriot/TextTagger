@@ -1,0 +1,23 @@
+
+
+entity Sentences {
+	sentence String,
+    predictedIntent String,
+    correctedIntent String,
+    rescueIntent String,
+    isQuestion Boolean,
+    questionResponse String
+}
+
+
+
+// Set pagination options
+paginate Sentences with infinite-scroll
+
+dto * with mapstruct
+
+service Sentences with sentencesClass
+
+// Set an angular suffix
+angularSuffix * with mySuffix
+
